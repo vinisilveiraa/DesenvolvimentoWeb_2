@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4-JS Nome e Sobrenome</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>entrada, processamento e saida</h1>
+
+    <form id="nomes" action="" method="get">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" placeholder="Insira seu NOME.." tabindex="1">
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" id="sobrenome" placeholder="Insira seu SOBRENOME.." tabindex="2">
+    </form>
+
+    <button id="juntar" onclick="juntarNome()" tabindex="3">
+        Juntar
+    </button>
+
+    <hr>
+    <br>
+    <p>Nome Completo: (innerText)</p>
+    <p id="nomecompleto">vai aparecer o nome completo aq</p>
+    
+    
+    <script href="js/utilidades.js"></script>
+</body>
+</html>
