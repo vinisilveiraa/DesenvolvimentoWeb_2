@@ -10,23 +10,26 @@
 
     <h1>entrada, processamento e saida</h1>
 
-    <form id="nomes" action="" method="get">
-        <label for="nome">Nome: </label>
-        <input type="text" id="nome" placeholder="Insira seu NOME.." tabindex="1">
-        <label for="sobrenome">Sobrenome: </label>
-        <input type="text" id="sobrenome" placeholder="Insira seu SOBRENOME.." tabindex="2">
-    </form>
+    <div>
+        <form id="nomes" action="" method="get">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Insira seu NOME.." tabindex="1">
+            <label for="sobrenome">Sobrenome: </label>
+            <input type="text" id="sobrenome" placeholder="Insira seu SOBRENOME.." tabindex="2">
+        </form>
+        <button id="juntar" onclick="juntarNome()" tabindex="3">
+            <i class="fa fa-plus"></i>Juntar
+        </button>
+    </div>
 
-    <button id="juntar" onclick="juntarNome()" tabindex="3">
-        Juntar
-    </button>
+    <hr> <br>
 
-    <hr>
-    <br>
     <p>Nome Completo: (innerText)</p>
-    <p id="nomecompleto">vai aparecer o nome completo aq</p>
+    <p id="nomecompleto">Ultimo nome adicionado</p>
+
+    <ul id="listaNomes"></ul>
     
     
-    <script href="js/utilidades.js"></script>
+    <script src="js/utilidades.js"></script>
 </body>
 </html>
