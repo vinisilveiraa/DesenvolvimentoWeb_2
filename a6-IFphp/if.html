@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Somente - JS</title>
+</head>
+<body>
+    <h1>IF - Somente Javascript</h1>
+
+    <form action="">
+        <label for="idade"></label>
+        <input type="text" id="idade" name="idade">
+    </form>
+    <button id="verificar" value="verificar" onclick="verificarIdade()">Verificar</button>
+    <hr>
+    <p>Voce e considerado</p>
+    <p id="resposta"></p>
+
+    <script>
+        function verificarIdade() {
+            let idade = parseInt(document.getElementById("idade").value);
+            let resultado = "Menor de idade"
+            // variavel recebe resultado do form
+            // parseint transforma o numero em inteiro
+            
+            if (idade >= 18) {
+                resultado = "Maior de idade"
+            }
+
+            document.getElementById("resposta").innerText = resultado;
+            // insere variavel dentro do html com innertext
+        }
+
+    </script>
+
+</body>
+</html>
