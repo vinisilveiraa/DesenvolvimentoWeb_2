@@ -1,0 +1,13 @@
+button {
+    padding: 30px;
+    width: 90px;
+}
+
+#calcular, input {
+    width: 100%;
+    padding: 10px;
+}
+
+#igual {
+    width: 100%;
+}
