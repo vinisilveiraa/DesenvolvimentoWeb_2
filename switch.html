@@ -21,7 +21,7 @@
 
 <script>
     function validarDiaSemana() {
-        let dia = parseInt(document.getElementById("valor1").valuFe);
+        let dia = parseInt(document.getElementById("valor1").value);
         let diaSemana = "";
 
         switch (dia) {
@@ -34,7 +34,7 @@
             case 7: diaSemana = "Domingo"; break;
             default: diaSemana = "Dia invalido"
         }
-        document.getElementsById("resultado").textContent = `Dia da semana: ${diaSemana}`;
+        document.getElementById("resultado").textContent = `Dia da semana: ${diaSemana}`;
     }
 </script>
 
