@@ -37,10 +37,11 @@ if (isset($_POST['numero'])) {
     <a href="/LEJP-ViniciusLeonardoSilveira/index.html">voltar pro index</a> <small>-- Esse codigo feito com ajuda do chatgpt em partes!!</small><br><br>
 
     
-    <h2>Digite numeros abaixo (0 para terminar)</h2>
+    <h2>Digite numeros abaixo</h2>
 
     <?php if ($_SESSION['fim'] == false): ?>
         <!-- se o check for falso mostra formulario -->
+        <p>Para mostrar seu resultado, digite 0. O form se repetira</p>
         <form method="post">
             <input type="number" name="numero" required>
             <button type="submit">Enviar</button>

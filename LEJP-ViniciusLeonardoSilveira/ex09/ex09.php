@@ -24,21 +24,19 @@
 
 <?php
 
-    if (isset($_POST['decimal'])) {
-        $d = str_replace(",", ".", $_POST['decimal']);
-        $d = (float)$d;
-        
-        if (($d - floor($d)) > 0.5) {
-            $resultado = ceil($d);
-        }
-        if (($d - floor($d)) < 0.5) {
-            $resultado = floor($d);
-        }
-        if (($d - floor($d)) == 0.5) {
-            $resultado = $d;
-        }
-        echo "O numero arredondado e de: $resultado";
+if (isset($_POST['decimal'])) {
+    $d = str_replace(",", ".", $_POST['decimal']);
+    $d = (float)$d;
 
-        $alt = round($d);
-        echo "<br> Round: $alt";
-    }
+
+    $resultadoCeil = ceil($d);
+    $resultadoFloor = floor($d);
+    $resultadoRound = round($d);
+
+    echo "
+        Valor original: $d<br>
+        Arredondado para cima (ceil): <strong>$resultadoCeil</strong><br>
+        Arredondado para baixo (floor): <strong>$resultadoFloor</strong><br>
+        Arredondamento normal (round): <strong>$resultadoRound</strong>`;";
+
+}
